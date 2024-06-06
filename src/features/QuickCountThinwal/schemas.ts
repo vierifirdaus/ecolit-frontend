@@ -1,0 +1,32 @@
+import { z } from "zod";
+
+export const QuickCountThinwalSchema = z.object({
+    id: z.string(),
+    date: z.date(),
+    cm12: z.number(),
+    cm14: z.number(),
+    cm16: z.number(),
+    cm18: z.number(),
+    cm20: z.number(),
+    tidak_ukuran_panjang: z.number(),
+    rusak_panjang: z.number(),
+    hanya_wadah_panjang: z.number(),
+    hanya_tutup_panjang: z.number(),
+    ml600: z.number(),
+    ml750: z.number(),
+    ml800: z.number(),
+    ml900: z.number(),
+    ml1000: z.number(),
+    ml1500: z.number(),
+    ml2000: z.number(),
+    ml3000: z.number(),
+    tidak_ukuran_ml: z.number(),
+    rusak_ml: z.number(),
+    hanya_wadah_ml: z.number(),
+    hanya_tutup_ml: z.number(),
+    dokukemtasi: z.string(),
+    keterangan: z.string(),
+    status: z.string(),
+    email: z.string(),
+    lembaga: z.string()
+})
